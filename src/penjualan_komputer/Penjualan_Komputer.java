@@ -267,5 +267,6 @@ public class Penjualan_Komputer {
         uangKembalian = uangBayar - hargatotal;
         System.out.println("\t   Kembaliannya : Rp " + uangKembalian);
         System.out.println("|=============================================================|");
+        System.out.println("test");
     }
 }
