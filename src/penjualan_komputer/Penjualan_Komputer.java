@@ -12,16 +12,19 @@ public class Penjualan_Komputer {
         System.out.println("|=============================================================|");
         System.out.println("|=====              DAFTAR BARANG DAN HARGA              =====|");
         System.out.println("|=============================================================|");
-        System.out.println("|=====        1. Lenovo B-30   | Rp 5.000.000,00         =====|");
-        System.out.println("|=====        2. Asus B-45     | Rp 5.500.000,00         =====|");
-        System.out.println("|=====        3. Lenovo B-25   | Rp 3.500.000,00         =====|");
-        System.out.println("|=====        4. Acer Z470     | RP 2.500.000,00         =====|");
-        System.out.println("|=====        5. Acer B500     | Rp 2.000.000,00         =====|");
-        System.out.println("|=====        6. Lenovo G405   | Rp 5.000.000,00         =====|");
-        System.out.println("|=====        7. Lenovo G405s  | Rp 5.500.000,00         =====|");
-        System.out.println("|=====        8. Asus ROG      | Rp 10.000.000,00        =====|");
-        System.out.println("|=====        9. Toshiba L312  | Rp 3.000.000,00         =====|");
-        System.out.println("|=====       10. Apple Mac X   | Rp 11.000.000,00        =====|");
+
+        String[] Laptop
+                = {"1. Lenovo B-30", "2. Asus B-45", "3. Lenovo B-25", "4. Acer Z470", "5. Acer B500", "6. Lenovo G405",
+                    "7. Lenovo G405s", "8. Asus ROG", "9. Toshiba L312", "10. Apple Mac X "};
+        String[] Harga
+                = {"| Rp 5.000.000,00", "| Rp 5.500.000,00", "| Rp 3.500.000,00", "| RP 2.500.000,00", "| Rp 2.000.000,00", "| Rp 5.000.000,00", "| Rp 5.500.000,00",
+                    "| Rp 10.000.000,00", "| Rp 3.000.000,00", "| Rp 11.000.000,00"};
+
+        for (int i = 0; i < Laptop.length; i++) {
+            System.out.println(" " + Laptop[i] + "     \t" + Harga[i]);
+
+        }
+
         System.out.println("|=============================================================|");
         System.out.println();
     }
@@ -44,12 +47,18 @@ public class Penjualan_Komputer {
             System.out.print("\t Pilih Barang Sesuai yang Anda Inginkan :");
             pil = input.nextInt();
             if (pil == 1) {
-                System.out.println("|=============================================================|");
-                System.out.println("|=====                  Lenovo B-30                      =====|");
-                System.out.println("|=====                  SPESIFIKASI                      =====|");
-                System.out.println("|====             Processor : Intel Core i3               ====|");
-                System.out.println("|====                    Ram : 2GB                        ====|");
-                System.out.println("|=============================================================|");
+                String[][] spek
+                        = {{"|=============================================================|",
+                            "|=====                  Lenovo B-30                      =====|"},
+                        {"|=====                  SPESIFIKASI                      =====|",
+                            "|====             Processor : Intel Core i3               ====|"},
+                        {"|====                    Ram : 2GB                        ====|",
+                            "|=============================================================|"}};
+                for (String[] spek1 : spek) {
+                    for (int j = 0; j < spek1.length; j++) {
+                        System.out.println(spek1[j]);
+                    }
+                }
                 System.out.println("|====                    1. Beli                          ====|");
                 System.out.println("|====                    2. Kembali                       ====|");
                 System.out.println("|=============================================================|");
@@ -63,16 +72,21 @@ public class Penjualan_Komputer {
                     tampilkanmenu();
                 }
             } else if (pil == 2) {
-                System.out.println("|=============================================================|");
-                System.out.println("|=====                   Asus B-45                       =====|");
-                System.out.println("|=====                  SPESIFIKASI                      =====|");
-                System.out.println("|====             Processor : Intel Core i3               ====|");
-                System.out.println("|====                    Ram : 2GB                        ====|");
-                System.out.println("|=============================================================|");
+                String[][] spek
+                        = {{"|=============================================================|",
+                            "|=====                   Asus B-45                       =====|"},
+                        {"|=====                  SPESIFIKASI                      =====|",
+                            "|====             Processor : Intel Core i3               ====|"},
+                        {"|====                    Ram : 2GB                        ====|",
+                            "|=============================================================|"}};
+                for (String[] spek1 : spek) {
+                    for (int j = 0; j < spek1.length; j++) {
+                        System.out.println(spek1[j]);
+                    }
+                }
                 System.out.println("|====                    1. Beli                          ====|");
                 System.out.println("|====                    2. Kembali                       ====|");
                 System.out.println("|=============================================================|");
-                System.out.print("\t   Masukkan Pilihan : ");
                 pil = input.nextInt();
                 if (pil == 1) {
                     menu[i] = "Asus B-45";
@@ -82,12 +96,18 @@ public class Penjualan_Komputer {
                     tampilkanmenu();
                 }
             } else if (pil == 3) {
-                System.out.println("|=============================================================|");
-                System.out.println("|=====                  Lenovo B-25                      =====|");
-                System.out.println("|=====                  SPESIFIKASI                      =====|");
-                System.out.println("|====             Processor : AMD  A6                     ====|");
-                System.out.println("|====                    Ram : 2GB                        ====|");
-                System.out.println("|=============================================================|");
+                String[][] spek
+                        = {{"|=============================================================|",
+                            "|=====                  Lenovo A-25                      =====|"},
+                        {"|=====                  SPESIFIKASI                      =====|",
+                            "|====             Processor : AMD  A6                     ====|"},
+                        {"|====                    Ram : 2GB                        ====|",
+                            "|=============================================================|"}};
+                for (String[] spek1 : spek) {
+                    for (int j = 0; j < spek1.length; j++) {
+                        System.out.println(spek1[j]);
+                    }
+                }
                 System.out.println("|====                    1. Beli                          ====|");
                 System.out.println("|====                    2. Kembali                       ====|");
                 System.out.println("|=============================================================|");
@@ -101,16 +121,21 @@ public class Penjualan_Komputer {
                     tampilkanmenu();
                 }
             } else if (pil == 4) {
-                System.out.println("|=============================================================|");
-                System.out.println("|=====                   Acer Z470                       =====|");
-                System.out.println("|=====                  SPESIFIKASI                      =====|");
-                System.out.println("|====             Processor : Intel Core 2 Duo            ====|");
-                System.out.println("|====                    Ram : 2GB                        ====|");
-                System.out.println("|=============================================================|");
+                String[][] spek
+                        = {{"|=============================================================|",
+                            "|=====                   Acer Z470                       =====|"},
+                        {"|=====                  SPESIFIKASI                      =====|",
+                            "|====             Processor : Intel Core 2 Duo            ====|"},
+                        {"|====                    Ram : 2GB                        ====|",
+                            "|=============================================================|"}};
+                for (String[] spek1 : spek) {
+                    for (int j = 0; j < spek1.length; j++) {
+                        System.out.println(spek1[j]);
+                    }
+                }
                 System.out.println("|====                    1. Beli                          ====|");
                 System.out.println("|====                    2. Kembali                       ====|");
                 System.out.println("|=============================================================|");
-                System.out.print("\t   Masukkan Pilihan : ");
                 pil = input.nextInt();
                 if (pil == 1) {
                     menu[i] = "Acer Z470";
@@ -120,12 +145,18 @@ public class Penjualan_Komputer {
                     tampilkanmenu();
                 }
             } else if (pil == 5) {
-                System.out.println("|=============================================================|");
-                System.out.println("|=====                   Acer B500                       =====|");
-                System.out.println("|=====                  SPESIFIKASI                      =====|");
-                System.out.println("|====             Processor : Intel Atom                  ====|");
-                System.out.println("|====                    Ram : 2GB                        ====|");
-                System.out.println("|=============================================================|");
+                String[][] spek
+                        = {{"|=============================================================|",
+                            "|=====                   Acer B500                       =====|"},
+                        {"|=====                  SPESIFIKASI                      =====|",
+                            "|====             Processor : Intel Atom                  ====|"},
+                        {"|====                    Ram : 2GB                        ====|",
+                            "|=============================================================|"}};
+                for (String[] spek1 : spek) {
+                    for (int j = 0; j < spek1.length; j++) {
+                        System.out.println(spek1[j]);
+                    }
+                }
                 System.out.println("|====                    1. Beli                          ====|");
                 System.out.println("|====                    2. Kembali                       ====|");
                 System.out.println("|=============================================================|");
@@ -139,12 +170,18 @@ public class Penjualan_Komputer {
                     tampilkanmenu();
                 }
             } else if (pil == 6) {
-                System.out.println("|=============================================================|");
-                System.out.println("|=====                  Lenovo G405                      =====|");
-                System.out.println("|=====                  SPESIFIKASI                      =====|");
-                System.out.println("|====             Processor : AMD A8                      ====|");
-                System.out.println("|====                    Ram : 4GB                        ====|");
-                System.out.println("|=============================================================|");
+                String[][] spek
+                        = {{"|=============================================================|",
+                            "|=====                  Lenovo G405                      =====|"},
+                        {"|=====                  SPESIFIKASI                      =====|",
+                            "|====             Processor : AMD A8                      ====|"},
+                        {"|====                    Ram : 4GB                        ====|",
+                            "|=============================================================|"}};
+                for (String[] spek1 : spek) {
+                    for (int j = 0; j < spek1.length; j++) {
+                        System.out.println(spek1[j]);
+                    }
+                }
                 System.out.println("|====                    1. Beli                          ====|");
                 System.out.println("|====                    2. Kembali                       ====|");
                 System.out.println("|=============================================================|");
@@ -158,12 +195,18 @@ public class Penjualan_Komputer {
                     tampilkanmenu();
                 }
             } else if (pil == 7) {
-                System.out.println("|=============================================================|");
-                System.out.println("|=====                  Lenovo G405s                     =====|");
-                System.out.println("|=====                  SPESIFIKASI                      =====|");
-                System.out.println("|====             Processor : AMD A8                      ====|");
-                System.out.println("|====                    Ram : 4GB                        ====|");
-                System.out.println("|=============================================================|");
+                String[][] spek
+                        = {{"|=============================================================|",
+                            "|=====                  Lenovo G405s                     =====|"},
+                        {"|=====                  SPESIFIKASI                      =====|",
+                            "|====             Processor : AMD A8                      ====|"},
+                        {"|====                    Ram : 4GB                        ====|",
+                            "|=============================================================|"}};
+                for (String[] spek1 : spek) {
+                    for (int j = 0; j < spek1.length; j++) {
+                        System.out.println(spek1[j]);
+                    }
+                }
                 System.out.println("|====                    1. Beli                          ====|");
                 System.out.println("|====                    2. Kembali                       ====|");
                 System.out.println("|=============================================================|");
@@ -177,12 +220,18 @@ public class Penjualan_Komputer {
                     tampilkanmenu();
                 }
             } else if (pil == 8) {
-                System.out.println("|=============================================================|");
-                System.out.println("|=====                   Asus ROG                        =====|");
-                System.out.println("|=====                  SPESIFIKASI                      =====|");
-                System.out.println("|====             Processor : Intel Core i3               ====|");
-                System.out.println("|====                    Ram : 4GB                        ====|");
-                System.out.println("|=============================================================|");
+                String[][] spek
+                        = {{"|=============================================================|",
+                            "|=====                   Asus ROG                        =====|"},
+                        {"|=====                  SPESIFIKASI                      =====|",
+                            "|====             Processor : Intel Core i3               ====|"},
+                        {"|====                    Ram : 4GB                        ====|",
+                            "|=============================================================|"}};
+                for (String[] spek1 : spek) {
+                    for (int j = 0; j < spek1.length; j++) {
+                        System.out.println(spek1[j]);
+                    }
+                }
                 System.out.println("|====                    1. Beli                          ====|");
                 System.out.println("|====                    2. Kembali                       ====|");
                 System.out.println("|=============================================================|");
@@ -196,12 +245,18 @@ public class Penjualan_Komputer {
                     tampilkanmenu();
                 }
             } else if (pil == 9) {
-                System.out.println("|=============================================================|");
-                System.out.println("|=====                  Toshiba L312                     =====|");
-                System.out.println("|=====                  SPESIFIKASI                      =====|");
-                System.out.println("|====             Processor : Intel Core i3               ====|");
-                System.out.println("|====                    Ram : 2GB                        ====|");
-                System.out.println("|=============================================================|");
+                String[][] spek
+                        = {{"|=============================================================|",
+                            "|=====                  Toshiba L312                     =====|"},
+                        {"|=====                  SPESIFIKASI                      =====|",
+                            "|====             Processor : Intel Core i3               ====|"},
+                        {"|====                    Ram : 2GB                        ====|",
+                            "|=============================================================|"}};
+                for (String[] spek1 : spek) {
+                    for (int j = 0; j < spek1.length; j++) {
+                        System.out.println(spek1[j]);
+                    }
+                }
                 System.out.println("|====                    1. Beli                          ====|");
                 System.out.println("|====                    2. Kembali                       ====|");
                 System.out.println("|=============================================================|");
@@ -215,12 +270,18 @@ public class Penjualan_Komputer {
                     tampilkanmenu();
                 }
             } else if (pil == 10) {
-                System.out.println("|=============================================================|");
-                System.out.println("|=====                  Apple Mac X                      =====|");
-                System.out.println("|=====                  SPESIFIKASI                      =====|");
-                System.out.println("|====             Processor : Intel Core i3               ====|");
-                System.out.println("|====                    Ram : 4GB                        ====|");
-                System.out.println("|=============================================================|");
+                String[][] spek
+                        = {{"|=============================================================|",
+                            "|=====                  Apple Mac X                      =====|"},
+                        {"|=====                  SPESIFIKASI                      =====|",
+                            "|====             Processor : Intel Core i3               ====|"},
+                        {"|====                    Ram : 4GB                        ====|",
+                            "|=============================================================|"}};
+                for (String[] spek1 : spek) {
+                    for (int j = 0; j < spek1.length; j++) {
+                        System.out.println(spek1[j]);
+                    }
+                }
                 System.out.println("|====                    1. Beli                          ====|");
                 System.out.println("|====                    2. Kembali                       ====|");
                 System.out.println("|=============================================================|");
